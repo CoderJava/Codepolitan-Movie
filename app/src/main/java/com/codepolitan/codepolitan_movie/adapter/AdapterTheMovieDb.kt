@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.item_movie.view.*
 /**
  * Created by yudisetiawan on 11/4/17.
  */
-class AdapterTheMovieDb(private val context: Context, private val resultTheMovieDb: List<Result>) : RecyclerView.Adapter<AdapterTheMovieDb.ViewHolderTheMovieDb>() {
+class AdapterTheMovieDb(private val context: Context, private var resultTheMovieDb: ArrayList<Result>) : RecyclerView.Adapter<AdapterTheMovieDb.ViewHolderTheMovieDb>() {
 
     private val TAG = javaClass.simpleName
 
@@ -49,6 +49,12 @@ class AdapterTheMovieDb(private val context: Context, private val resultTheMovie
     }
 
     override fun getItemCount(): Int = resultTheMovieDb.size
+
+    fun refreshAdapter(resultTheMovieDb: List<Result>) {
+        val lastIndex = this.resultTheMovieDb.size
+        this.resultTheMovieDb.addAll(resultTheMovieDb)
+        notifyItemRangeChanged(0, this.resultTheMovieDb.size)
+    }
 
     inner class ViewHolderTheMovieDb(itemView: View?) : RecyclerView.ViewHolder(itemView)
 
