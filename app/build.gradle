@@ -19,20 +19,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "production", "development"
     productFlavors {
         production {
             applicationIdSuffix ".production"
-            buildConfigField("String", "API_KEY", "\"nilai api key Anda\"") // Ex: \"d6dfdsfdsf\"
+            buildConfigField("String", "API_KEY", "\"fe71629f457c2466875babf7fbe5bb6c\"") // Ex: \"d6dfdsfdsf\"
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
             buildConfigField("String", "LANGUAGE", "\"EN-US\"")
             buildConfigField("String", "BASE_URL_IMAGE", "\"https://image.tmdb.org/t/p/w185/\"")
+            dimension "production"
         }
         development {
             applicationIdSuffix ".development"
-            buildConfigField("String", "API_KEY", "\"nilai api key Anda\"") // Ex: \"d6dfdsfdsf\"
+            buildConfigField("String", "API_KEY", "\"fe71629f457c2466875babf7fbe5bb6c\"") // Ex: \"d6dfdsfdsf\"
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
             buildConfigField("String", "LANGUAGE", "\"EN-US\"")
             buildConfigField("String", "BASE_URL_IMAGE", "\"https://image.tmdb.org/t/p/w185/\"")
+            dimension "development"
         }
     }
 }
@@ -42,19 +45,21 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile 'com.android.support:design:26.0.0-alpha1'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:retrofit-converters:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    compile 'io.reactivex.rxjava2:rxjava:2.1.6'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'com.google.code.gson:gson:2.8.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.github.bumptech.glide:glide:4.3.0'
 }
 repositories {
     mavenCentral()
+    google()
 }
