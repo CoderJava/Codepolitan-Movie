@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Codepolitan-Movie</string>
+    <string name="image_view_poster_movie">image view poster movie</string>
+    <string name="title_movie">Title Movie</string>
+    <string name="release_date">Release Date</string>
+    <string name="release_date_value">Release Date Value</string>
+    <string name="image_view_vote_average">image view vote average</string>
+    <string name="_0_0">0.0</string>
+    <string name="overview">Overview</string>
+    <string name="overview_value">Overview Value</string>
 </resources>
