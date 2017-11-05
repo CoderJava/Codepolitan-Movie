@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName
 /**
  * Created by yudisetiawan on 11/4/17.
  */
+
 data class Result(
         @SerializedName("vote_count") val voteCount: Int,
         @SerializedName("id") val id: Int,

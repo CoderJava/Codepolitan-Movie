@@ -51,7 +51,6 @@ class AdapterTheMovieDb(private val context: Context, private var resultTheMovie
     override fun getItemCount(): Int = resultTheMovieDb.size
 
     fun refreshAdapter(resultTheMovieDb: List<Result>) {
-        val lastIndex = this.resultTheMovieDb.size
         this.resultTheMovieDb.addAll(resultTheMovieDb)
         notifyItemRangeChanged(0, this.resultTheMovieDb.size)
     }

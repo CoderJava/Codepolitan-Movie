@@ -7,22 +7,20 @@
     tools:context="com.codepolitan.codepolitan_movie.MainActivity">
 
     <ProgressBar
+        android:id="@+id/progress_bar_horizontal_activity_main"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/progress_bar_horizontal_activity_main"
         android:indeterminate="true"
-        android:max="100"
-        style="?android:attr/progressBarStyleHorizontal"
-        />
+        android:max="100" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_movie_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view_movie_activity_main"
-        android:paddingTop="8dp"
-        android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingBottom="8dp"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        />
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp" />
 
 </RelativeLayout>

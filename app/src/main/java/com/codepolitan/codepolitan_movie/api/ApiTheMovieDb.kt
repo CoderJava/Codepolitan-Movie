@@ -9,6 +9,7 @@ import retrofit2.http.Query
 /**
  * Created by yudisetiawan on 11/4/17.
  */
+
 interface ApiTheMovieDb {
 
     @GET("movie/now_playing")

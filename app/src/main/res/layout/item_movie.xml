@@ -10,8 +10,8 @@
         android:id="@+id/image_view_poster_item_movie"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:contentDescription="@string/image_view_poster_movie"
         android:scaleType="fitXY" />
 
@@ -19,80 +19,73 @@
         android:id="@+id/text_view_title_movie_item_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:text="@string/title_movie"
         android:textSize="20sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/image_view_vote_average_item_movie"
-        android:src="@drawable/ic_star_pink_24dp"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
-        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_title_movie_item_movie"
+        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:contentDescription="@string/image_view_vote_average"
-        />
+        android:src="@drawable/ic_star_pink_24dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/text_view_vote_average_item_movie"
-        android:layout_toRightOf="@+id/image_view_vote_average_item_movie"
-        android:layout_toEndOf="@+id/image_view_vote_average_item_movie"
-        android:layout_below="@+id/text_view_title_movie_item_movie"
-        android:text="@string/_0_0"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_title_movie_item_movie"
+        android:layout_toEndOf="@+id/image_view_vote_average_item_movie"
+        android:layout_toRightOf="@+id/image_view_vote_average_item_movie"
+        android:text="@string/_0_0"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/text_view_release_date_item_movie"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
-        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_vote_average_item_movie"
         android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:text="@string/release_date"
-        android:textColor="@android:color/darker_gray"
-        />
+        android:textColor="@android:color/darker_gray" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/text_view_release_date_value_item_movie"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
-        android:layout_toEndOf="@+id/image_view_poster_item_movie"
-        android:layout_below="@+id/text_view_release_date_item_movie"
-        android:text="@string/release_date_value"
-        />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_view_overview_item_movie"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
+        android:layout_below="@+id/text_view_release_date_item_movie"
         android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
+        android:text="@string/release_date_value" />
+
+    <TextView
+        android:id="@+id/text_view_overview_item_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_release_date_value_item_movie"
         android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:text="@string/overview"
-        android:textColor="@android:color/darker_gray"
-        />
+        android:textColor="@android:color/darker_gray" />
 
     <TextView
+        android:id="@+id/text_view_overview_value_item_movie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text_view_overview_value_item_movie"
-        android:layout_toRightOf="@+id/image_view_poster_item_movie"
-        android:layout_toEndOf="@+id/image_view_poster_item_movie"
         android:layout_below="@+id/text_view_overview_item_movie"
-        android:text="@string/overview_value"
-        android:maxLines="3"
+        android:layout_toEndOf="@+id/image_view_poster_item_movie"
+        android:layout_toRightOf="@+id/image_view_poster_item_movie"
         android:ellipsize="end"
-        />
+        android:maxLines="3"
+        android:text="@string/overview_value" />
 
 </RelativeLayout>
