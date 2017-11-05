@@ -23,7 +23,7 @@ android {
     productFlavors {
         production {
             applicationIdSuffix ".production"
-            buildConfigField("String", "API_KEY", "\"fe71629f457c2466875babf7fbe5bb6c\"") // Ex: \"d6dfdsfdsf\"
+            buildConfigField("String", "API_KEY", "\"Di isi dengan nilai API Key Anda\"") // Ex: \"d6dfdsfdsf\"
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
             buildConfigField("String", "LANGUAGE", "\"EN-US\"")
             buildConfigField("String", "BASE_URL_IMAGE", "\"https://image.tmdb.org/t/p/w185/\"")
@@ -31,7 +31,7 @@ android {
         }
         development {
             applicationIdSuffix ".development"
-            buildConfigField("String", "API_KEY", "\"fe71629f457c2466875babf7fbe5bb6c\"") // Ex: \"d6dfdsfdsf\"
+            buildConfigField("String", "API_KEY", "\"Di isi dengan nilai API Key Anda\"") // Ex: \"d6dfdsfdsf\"
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
             buildConfigField("String", "LANGUAGE", "\"EN-US\"")
             buildConfigField("String", "BASE_URL_IMAGE", "\"https://image.tmdb.org/t/p/w185/\"")
